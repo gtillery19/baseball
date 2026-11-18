@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Baseball",
+    "section": "",
+    "text": "Welcome to Baseball\nThis site explores the history of Major League Baseball through its data, using the Lahman database.\nTotal home runs make shortened seasons look like dramatic collapses. Comparing home runs per team-game gives a fairer view: 2020 averaged 1.28 per team-game, close to 2019’s 1.39, while other shortened seasons varied.\nBarry Bonds leads the career home-run list, with Hank Aaron and Babe Ruth among the top sluggers. Use the Home runs and Sluggers pages in the navbar to explore the seasonal trends and career leaders."
+  },
+  {
+    "objectID": "sluggers.html#barry-bonds",
+    "href": "sluggers.html#barry-bonds",
+    "title": "Sluggers",
+    "section": "Barry Bonds",
+    "text": "Barry Bonds"
+  }
+]
