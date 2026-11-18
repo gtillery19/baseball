@@ -30,7 +30,7 @@ hr_by_season <- Teams |>
 ```{r}
 ggplot(hr_by_season, aes(x = yearID, y = home_runs_per_game)) +
   geom_line(color = "gray70") +
-  geom_point(aes(color = season_type)) +
+geom_point(aes(color = season_type), na.rm = TRUE) +
   scale_color_manual(
     values = c("Other seasons" = "#2C7FB8", "Shortened seasons" = "#D95F02")
   ) +
@@ -41,19 +41,4 @@ ggplot(hr_by_season, aes(x = yearID, y = home_runs_per_game)) +
     color = "Season type",
     caption = "Source: Lahman database"
   )
-```
-
-## Comparing seasons
-
-```{r}
-Teams |>
-  filter(yearID %in% c(1981, 1994, 2019, 2020)) |>
-  group_by(yearID) |>
-  summarize(
-    total_HR = sum(HR),
-    total_team_games = sum(G),
-    .groups = "drop"
-  ) |>
-  mutate(home_runs_per_game = round(total_HR / total_team_games, 2)) |>
-  arrange(yearID)
 ```
